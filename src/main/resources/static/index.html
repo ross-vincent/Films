@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="mainApp">
+    <head>
+        <!-- Include our css file -->
+        <link rel="stylesheet" href="css/films.css"/>
+    </head>
+  
+    <body>
+        <div ng-view>
+            <!-- This is where AngularJS inserts all its dynamic web pages -->
+        </div>
+        
+        <!-- Include the external AngularJS modules --> 
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+        
+        <!-- Include our own AngularJS App and Controllers (one controller for each web page) -->
+        <script src="mainApp.js"></script>
+        <script src="home/homeController.js"></script>
+        
+        <!-- Include our own Service (this will call our back-end using the REST api) -->
+        <script src="services/filmsApiService.js"></script>
+        
+    </body>
+  </body>
+</html>
